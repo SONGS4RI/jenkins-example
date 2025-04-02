@@ -4,6 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.jenkins
+    user: root
     ports:
       - "18081:8080"   # Jenkins 웹 UI 접속 포트
       - "50000:50000" # 에이전트 연결 포트
